@@ -4,3 +4,10 @@ var app = new Vue({
         msg:"Hello World"
     }
 })
+
+var app2 = new Vue({
+    el:'#app2',
+    data:{
+        msg:"Hello World"
+    }
+})
