@@ -11,3 +11,10 @@ var app2 = new Vue({
         msg:"Hello World"
     }
 })
+
+var app3 = new Vue({
+    el:'#app3',
+    data:{
+        seen:true
+    }
+})
