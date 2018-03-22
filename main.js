@@ -18,3 +18,10 @@ var app3 = new Vue({
         seen:true
     }
 })
+
+var app4 = new Vue({
+    el:'#app4',
+    data:{
+        todos:[]
+    }
+})
