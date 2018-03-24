@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="app">
-        {{ msg }}
+        {{msg}}
     </div>
     <div id="app2">
         <span v-bind:title="msg">
@@ -27,6 +27,24 @@
           <li v-for="todo in todos">
             {{ todo.text }}
           </li>
+        </ol>
+    </div>
+    <div id="app5">
+        <p>{{msg}}</p>
+        <button v-on:click="reverse">Reverse</button>
+    </div>
+    <div id="app6">
+        <p>{{msg}}</p>
+        <input v-model="msg">
+    </div>
+    <div id="app7">
+        <ol>
+          <!-- 
+            各 todo-item の内容を表す todo オブジェクトを与えます。
+            これにより内容は動的に変化します。
+            また後述する "key" を各コンポーネントに提供する必要があります。
+          -->
+          <todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
         </ol>
       </div>
 </body>
